@@ -19,6 +19,6 @@ test("Sets the iterator context to the selection", function() {
 	var elems = this.elems;
 
 	elems.forEach(function(elem, idx) {
-		equal(elem, elems[idx], "Correct context");
+		equal(this, elems[idx], "Correct context");
 	});
 });
